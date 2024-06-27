@@ -46,7 +46,7 @@ void AM2302_Start(void)
 }
 
 /*接收数据*/
-uint64_t AM2302_ReceiveByte(void)
+uint64_t AM2302_ReceiveData(void)
 {
 	uint64_t Byte = 0;
 	for (uint8_t i = 0; i < 40; i ++)

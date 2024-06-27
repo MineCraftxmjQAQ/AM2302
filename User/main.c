@@ -16,7 +16,7 @@ int main(void)
 	while (1)
 	{
 		AM2302_Start();//发起通信
-		data = AM2302_ReceiveByte();//接收数据
+		data = AM2302_ReceiveData();//接收数据
 		
 		temperature = (uint16_t)((data >> 8) & 0x0000ffff);
 		humidity= (int16_t)((data >> 24) & 0x0000ffff);
